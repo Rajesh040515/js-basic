@@ -1,4 +1,3 @@
+let x = (2 + 3) * 5;
+console.log(x);
 
-let point = 110;
-let type = point > 100 ? 'gold' : 'silver';
-console.log(type);
