@@ -1,13 +1,12 @@
 
-let x = 10;
+let x = 1;
 
-//x = x + 5; is a arithmatic operator
-
-//assignment operator
-x += 5;
-x *= 5;
-x -= 5;
-x /= 5;
-console.log(x);
+console.log(x >= 0);
+console.log(x >= 1);
+console.log(x < 1);
+console.log(x <= 1);
 
 
+//equality operarotor
+console.log(x === 1);
+console.log(x !== 1);
