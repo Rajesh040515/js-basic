@@ -1,14 +1,14 @@
+let hour = 10;
+if (hour >= 6 && hour < 12) {
+    console.log('good morning');
+}
 
-//logical operator exercise
-//let x = 10;
-//let y = (x > 5) && (x < 15);
-//console.log(y);
+else if (hour >= 12 && hour < 6) {
 
-let a = 'red';
-let b = 'blue';
-let c = a;
-a = b;
-b = c;
+    console.log('good afternoon');
 
-console.log(a);
-console.log(b);
+}
+else {
+    console.log('good evening');
+
+}
