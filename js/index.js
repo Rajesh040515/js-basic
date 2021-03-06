@@ -1,13 +1,18 @@
 
-//performing a task
-function greet(uname, lname) {
-    console.log('hello ' + uname + '' + lname);
+let x = 5;
+let y = 5;
 
-}
-console.log(greet('rajesh', 'patel'));
-//calculating function
-function square(num) {
-    return num * num;
-}
 
-console.log(square(2));
+//console.log(x + y);
+//console.log(x - y);
+//console.log(x * y);
+//console.log(x / y);
+//console.log(x % y);
+
+
+//increment operator
+//console.log(x++);
+//console.log(x);
+//decrement operator
+console.log(x--)
+console.log(x);
