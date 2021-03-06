@@ -1,6 +1,13 @@
+
+//performing a task
 function greet(uname, lname) {
-    console.log('hello world' + uname + '' + lname);
+    console.log('hello ' + uname + '' + lname);
 
 }
+console.log(greet('rajesh', 'patel'));
+//calculating function
+function square(num) {
+    return num * num;
+}
 
-greet(' ratel', 'patel');
+console.log(square(2));
