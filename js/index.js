@@ -1,18 +1,13 @@
 
-let x = 5;
-let y = 5;
+let x = 10;
 
+//x = x + 5; is a arithmatic operator
 
-//console.log(x + y);
-//console.log(x - y);
-//console.log(x * y);
-//console.log(x / y);
-//console.log(x % y);
-
-
-//increment operator
-//console.log(x++);
-//console.log(x);
-//decrement operator
-console.log(x--)
+//assignment operator
+x += 5;
+x *= 5;
+x -= 5;
+x /= 5;
 console.log(x);
+
+
