@@ -1,19 +1,26 @@
 
-let address = {
+let address = new Address('a', 'b', 'c');
+
+console.log(Address());
 
 
-    street: 'a',
-    city: 'b',
-    zipcode: 'c'
+//factory function
+function createaddress(street, city, zipcode) {
+    return {
 
-
-};
-function showaddress(address) {
-    for (let key in address)
-        console.log(key, address[key]);
-
+        street,
+        city,
+        zipcode
+    };
 }
-showaddress(address);
+
+
+//constructor function
+function Address(street, city, zipcode) {
+    this.street = street;
+    this.city = city;
+    this.zipcode = zipcode;
+}
 
 
 
