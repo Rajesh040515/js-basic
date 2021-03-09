@@ -5,8 +5,6 @@ const courses = [
 
 
 ];
-const course = courses.find(function (course) {
+const course = courses.find(course => course.name === 'a');
 
-    return course.name === 'a';
-});
 console.log(course);
