@@ -1,8 +1,14 @@
 
+let i = 0;
+while (i <= 10) {
+    // if (i === 5)
+    //     break;
 
-const colors = ['red', 'green', 'blue'];
-for (let r of colors) {
+    if (i % 2 === 0) {
 
-    console.log(r);
-
+        i++;
+        continue;
+    }
+    console.log(i);
+    i++;
 }
