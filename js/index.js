@@ -1,15 +1,13 @@
-const circle = {
 
-    radius: 1,
-    draw() {
-
-        console.log('draw');
-    }
-
-};
+const now = new Date();
+const date1 = new Date('may 11 2018 09:00');
+const date2 = new Date(2018, 4, 11, 9);
+date1.setFullYear(2017);
+now.setHours();
 
 
-let ans = Object.assign({}, circle);
-console.log(ans);
+
+
+
 
 
