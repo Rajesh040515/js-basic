@@ -1,27 +1,30 @@
 
-let address1 = new Address('a', 'b', 'c');
-let address2 = new Address('a', 'b', 'c');
+let post = {
 
-console.log(areequal(address1, address2));
-console.log(areequal(address1, address2));
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 10,
+    comment: [{
+
+        author: 'a', body: 'b'
+    },
+    {
+        author: 'c', body: 'd'
+
+    }
+    ],
+    isLive: true
+};
+let post1 = new Post('a', 'b', 'c');
+console.log(post1);
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comment = [];
+    this.isLive = false;
 
 
-
-//constructor function
-function Address(street, city, zipcode) {
-    this.street = street;
-    this.city = city;
-    this.zipcode = zipcode;
 }
-function areequal(address1, address2) {
-    return address1.street === address2.street &&
-        address1.city === address2.city &&
-        address1.zipcode === address2.zipcode;
-}
-
-function aresame(address1, address2) {
-    return address1 === address2;
-
-}
-
-
