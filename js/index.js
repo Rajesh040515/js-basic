@@ -1,10 +1,5 @@
-const courses = [
+const numbers = [1, 2, 3, 4];
 
-    { id: 1, name: 'a' },
-    { id: 2, name: 'b' },
+const first = numbers.shift();
 
-
-];
-const course = courses.find(course => course.name === 'a');
-
-console.log(course);
+console.log(first);
