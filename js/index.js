@@ -1,8 +1,16 @@
+const person = {
 
-let i = 0;
-do {
+    name: 'rajesh',
+    age: 21
+};
 
-    if (i % 2 !== 0)
-        console.log(i);
-    i++;
-} while (1 <= 5);
+for (let key in person) {
+    console.log(key, person[key]);
+}
+
+const colors = ['red', 'green', 'blue'];
+for (let r in colors) {
+
+    console.log(r, colors[r]);
+
+}
