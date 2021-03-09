@@ -1,14 +1,16 @@
 
-let i = 0;
-while (i <= 10) {
-    // if (i === 5)
-    //     break;
+let num = max(6, 2);
+console.log(num);
 
-    if (i % 2 === 0) {
-
-        i++;
-        continue;
+function max(a, b) {
+    if (a > b) {
+        return a;
     }
-    console.log(i);
-    i++;
+    else {
+        return b;
+    }
+
+
+
 }
+
