@@ -1,22 +1,21 @@
-showprimes(50);
-function showprimes(limit) {
+function createcircle(radius) {
+    return {
 
-    for (let number = 2; number <= limit; number++) {
-        if (isprime(number))
-            console.log(number);
-    }
-
-    function isprime(number) {
+        radius,
 
 
-        for (let factor = 2; factor < number; factor++)
+        draw() {
+            console.log('draw');
 
-            if (number % factor === 0)
-                return false;
-        return true;
-    }
+        }
 
+    };
 }
+const circle1 = createcircle(1);
+console.log(circle1);
+
+const circle2 = createcircle(2);
+console.log(circle2);
 
 
 
