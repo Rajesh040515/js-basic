@@ -1,30 +1,4 @@
-
-let post = {
-
-    title: 'a',
-    body: 'b',
-    author: 'c',
-    views: 10,
-    comment: [{
-
-        author: 'a', body: 'b'
-    },
-    {
-        author: 'c', body: 'd'
-
-    }
-    ],
-    isLive: true
-};
-let post1 = new Post('a', 'b', 'c');
-console.log(post1);
-function Post(title, body, author) {
-    this.title = title;
-    this.body = body;
-    this.author = author;
-    this.views = 0;
-    this.comment = [];
-    this.isLive = false;
-
-
-}
+const number = [3, 4];
+number.push(5, 6);
+number.unshift(1, 2);
+console.log(number);
