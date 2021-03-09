@@ -7,12 +7,9 @@ const circle = {
     }
 
 };
-for (let key in circle)
-    console.log(key, circle[key]);
 
-for (let key of Object.keys(circle))
-    console.log(key);
-if ('color' in circle) console.log('yes');
 
+let ans = Object.assign({}, circle);
+console.log(ans);
 
 
