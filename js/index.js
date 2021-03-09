@@ -1,4 +1,12 @@
-const number = [1, 2, 3, 4];
+const courses = [
 
-console.log(number.indexOf(3));
-console.log(number.indexOf(1) !== -1);
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+
+
+];
+const course = courses.find(function (course) {
+
+    return course.name === 'a';
+});
+console.log(course);
