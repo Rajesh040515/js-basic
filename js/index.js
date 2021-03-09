@@ -1,16 +1,6 @@
 
-let num = max(6, 2);
-console.log(num);
-
-function max(a, b) {
-    if (a > b) {
-        return a;
-    }
-    else {
-        return b;
-    }
-
-
-
+console.log(landscape(800, 600));
+function landscape(width, height) {
+    return (width > height);
 }
 
