@@ -1,13 +1,17 @@
 
 
-shownumber(5);
-function shownumber(limit) {
+const movie = {
+    title: 'a',
+    releaseyear: 2018,
+    raring: 4.5,
+    director: 'b'
 
-    for (let i = 0; i <= limit; i++) {
-        const message = (i % 2 === 0) ? 'even' : 'odd';
-        console.log(i, message);
-    }
-
+};
+showproperties(movie);
+function showproperties(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'string')
+            console.log(key, obj[key]);
 }
 
 
