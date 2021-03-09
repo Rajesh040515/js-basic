@@ -1,16 +1,18 @@
-function circle(radius) {
-    this.radius = radius;
-    this.draw = function () {
-        console.log('draw');
+const circle = {
 
+    radius: 1,
+    draw() {
+
+        console.log('draw');
     }
 
-}
-const circle1 = new circle(1);
+};
+for (let key in circle)
+    console.log(key, circle[key]);
 
-
-
-
+for (let key of Object.keys(circle))
+    console.log(key);
+if ('color' in circle) console.log('yes');
 
 
 
