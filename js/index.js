@@ -1,27 +1,14 @@
-const person = {
-    firstname: 'rajesh',
-    lastname: 'patel',
-    get fullname() {
-        return '${person.firstname} ${person.lastname}'
 
-    },
+const color = 'red';
+function start() {
 
-    set fullname(value) {
-        if (typeof value !== 'string')
-            throw new Error('value is not string');
+    const message = 'hi';
+    const color = 'blue';
+    console.log(color);
 
 
-        const parts = value.split(' ');
-        this.firstname = parts[0];
-        this.lastname = parts[1];
-
-    }
-
-};
-try {
-    person.fullname = null;
 }
-catch (e) {
-    alert(e);
+function stop() {
+    const message = 'bye';
 }
-console.log(person);
+start();
