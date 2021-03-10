@@ -7,6 +7,8 @@ const person = {
     },
 
     set fullname(value) {
+        if (typeof value !== 'string')
+            throw new Error('value is not string');
 
 
         const parts = value.split(' ');
@@ -16,5 +18,10 @@ const person = {
     }
 
 };
-person.fullname = 'hello hii';
+try {
+    person.fullname = null;
+}
+catch (e) {
+    alert(e);
+}
 console.log(person);
