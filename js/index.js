@@ -1,20 +1,15 @@
-//var example
-function start() {
+const video = {
+    title: 'a',
+    tag: ['a', 'b', 'c'],
 
-    for (var i = 0; i < 5; i++) {
+
+    showTags() {
+        this.tag.forEach(function (tag) {
+
+            console.log(this, tag);
+        });
 
     }
-    console.log(i);
-}
-start();
 
-// let example
-function start() {
-
-    for (let i = 0; i < 10; i++) {
-
-        console.log(i);
-    }
-
-}
-start();
+};
+console.showTags();
