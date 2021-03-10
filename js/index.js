@@ -1,4 +1,20 @@
-function interest(principle, rate = 3.5, years = 5) {
-    return principle * rate / 100 * years;
-}
-console.log(interest(20000));
+const person = {
+    firstname: 'rajesh',
+    lastname: 'patel',
+    get fullname() {
+        return '${person.firstname} ${person.lastname}'
+
+    },
+
+    set fullname(value) {
+
+
+        const parts = value.split(' ');
+        this.firstname = parts[0];
+        this.lastname = parts[1];
+
+    }
+
+};
+person.fullname = 'hello hii';
+console.log(person);
