@@ -1,14 +1,20 @@
-
-const color = 'red';
+//var example
 function start() {
 
-    const message = 'hi';
-    const color = 'blue';
-    console.log(color);
+    for (var i = 0; i < 5; i++) {
 
-
+    }
+    console.log(i);
 }
-function stop() {
-    const message = 'bye';
+start();
+
+// let example
+function start() {
+
+    for (let i = 0; i < 10; i++) {
+
+        console.log(i);
+    }
+
 }
 start();
