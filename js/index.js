@@ -1,19 +1,12 @@
 const number = [1, 4, 3, 5, 6, 7];
 
-
-const count = countoccurrence(number, 1)
-console.log(count);
-function countoccurrence(array, searchelement) {
+const max = getmax([1, 2]);
+console.log(max);
 
 
-    return array.reduce((accumulator, current) => {
+function getmax(array) {
 
-        const occurrence = (current === searchelement) ? 1 : 0;
-        console.log(accumulator, current, searchelement);
-        return accumulator + occurrence;
-
-
-    }, 0);
-
+    if (array.length === 0) return undefined;
+    array.reduce((a, b) => (a > b) ? a : b);
 
 }
