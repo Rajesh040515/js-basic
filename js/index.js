@@ -1,15 +1,27 @@
 const video = {
-    title: 'a',
+    title: 'd',
     tag: ['a', 'b', 'c'],
 
 
     showTags() {
         this.tag.forEach(function (tag) {
 
-            console.log(this, tag);
-        });
+            console.log(this.title, tag);
+        }.bind(this));
 
     }
 
 };
-console.showTags();
+video.showTags();
+
+
+
+
+
+
+
+
+
+
+
+
