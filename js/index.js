@@ -1,10 +1,8 @@
-function walk() {
-    console.log('walk');
+function sum(a, b) {
+    let total = 0;
+    for (let value of arguments)
+        total += value;
 
+    return total;
 }
-let run = function () {
-
-    console.log('run')
-
-};
-run();
+console.log(sum(1, 2, 5));
