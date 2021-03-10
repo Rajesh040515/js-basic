@@ -1,4 +1,8 @@
-const number = [3, 1, 1, 2];
+const number = [3, -1, 1, 2];
+const sum = number.reduce((accumulator, currentvalue) => {
 
-const filtered = number.filter(value => value >= 0);
-console.log(filtered);
+    return accumulator + currentvalue;
+});
+
+console.log(sum);
+
