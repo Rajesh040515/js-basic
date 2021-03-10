@@ -1,12 +1,15 @@
-const number = [1, 4, 3, 5, 6, 7];
-
-const max = getmax([1, 2]);
-console.log(max);
+const movie = [
 
 
-function getmax(array) {
+    { title: 'a', year: '2018', rating: '4' },
+    { title: 'b', year: '2018', rating: '4' },
+    { title: 'c', year: '2018', rating: '3' },
+    { title: 'd', year: '2018', rating: '4.5' },
 
-    if (array.length === 0) return undefined;
-    array.reduce((a, b) => (a > b) ? a : b);
-
-}
+]
+const title = movie
+    .filter(m => m.year === 2018 && m.rating >= 3)
+    .sort((a, b) => a.rating = b.rating)
+    .reverse()
+    .map(m => m.title)
+console.log(title);
