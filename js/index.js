@@ -1,7 +1,10 @@
-const numbers = [1, 2, 3];
-const numbers2 = [4, 5, 6];
+const number = [1, 2, 3];
+const joined = number.join(',');
+console.log(joined);
 
+const message = 'this is message';
+const parts = message.split(' ');
+console.log(parts);
 
-const combined = [...numbers, ...numbers2];
-const copy = [...combined];
-console.log(copy);
+const combined = parts.join('-');
+console.log(combined);
