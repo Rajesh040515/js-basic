@@ -1,8 +1,6 @@
-function sum(a, b) {
-    let total = 0;
-    for (let value of arguments)
-        total += value;
+function sum(discount, ...price) {
+    const total = price.reduce((a, b) => a + b);
 
-    return total;
+    return total * (1 - discount);
 }
-console.log(sum(1, 2, 5));
+console.log(sum(0.1, 20, 30, 1));
