@@ -1,18 +1,12 @@
-const video = {
-    title: 'd',
-    tag: ['a', 'b', 'c'],
+const circle = {
 
-
-    showTags() {
-        this.tag.forEach(function (tag) {
-
-            console.log(this.title, tag);
-        }.bind(this));
-
+    radius: 4,
+    get area() {
+        return Math.PI * this.radius * this.radius;
     }
 
 };
-video.showTags();
+console.log(circle.area);
 
 
 
