@@ -1,23 +1,13 @@
-try {
-    const number = [1, 2, 3, 4];
-    const count = countoccurences(number, 1);
-    console.log(count);
-}
-catch (e) {
-    console.log(e.message);
-}
-const countoccurences = count(array, searchelement)
-{
-    if (!Array.isArray(array))
-        throw new Error('invalide');
-    return array.reduce((accumulator, current) => {
+function sum(...item) {
 
-        const occurence = (current === searchelement) ? 1 : 0;
-        return accumulator + occurence;
-    }, 0);
+    if (item.length === 1 && Array.isArray(item[0]))
+        item = [...items[0]];
+    return item.reduce((a, b) => a + b);
+
+
 
 }
-
+console.log(sum(1, 2, 3, 4));
 /*const num1 = [5, 6, 8];
 
 
